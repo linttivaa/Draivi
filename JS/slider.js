@@ -22,7 +22,6 @@ function setSliderBackground(slider) {
   const val = parseFloat(slider.value);
   const percentage = ((val - min) / (max - min)) * 100;
 
-  // Left: dark green (#0C2900), Right: bright green (#2B8F00)
   slider.style.background = `linear-gradient(to right, #0C2900 ${percentage}%, #2B8F00 ${percentage}%)`;
 }
 
