@@ -8,23 +8,6 @@ This project is a simple static **Fintech Landing Page** with:
 - A countdown timer
 - Responsive layout and branding assets
 
-## 📁 Project Structure
-
-├── css/
-│ └── style.css # Main stylesheet
-├── JS/
-│ ├── countdownTimer.js # Countdown logic
-│ ├── form.js # Loan form & calculation
-│ └── slider.js # Slider interaction
-├── Public/
-│ ├── facebook.png
-│ ├── Hero.png
-│ ├── instagram.png
-│ ├── linkedin.png
-│ └── logo.png
-├── index.html # Main HTML file
-└── README.md # Project documentation
-
 
 ## 🚀 Getting Started
 
