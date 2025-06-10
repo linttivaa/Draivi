@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="public/logo.png" alt="Loan company logo" class="logo" />    
+            <nav class="navbar">
+                <a href="#" class="active">Laina</a>
+                <a href="#">Meistä</a>
+                <a href="#">Vastuullisuus</a>
+                <a href="#">Yhteystiedot</a>
+            </nav>   
+        </div> 
+    </header>
+
+    <!-- Floating loan form (fixed position) -->
+    <div class="form-wrapper">
+      <div class="loan-form-container">
+        <h2>Hae lainaa</h2>
+        <form id="loan-form" class="loan-form-grid">
+          <div class="range-group">
+            <div class="range-label-row">
+              <label for="loan-amount">Lainasumma</label>
+              <div class="input-with-suffix">
+                <input type="number" id="loan-amount-input" min="1000" max="20000" step="1000" value="9000" />
+                <span class="unit">€</span>
+              </div>
+            </div>
+            <input type="range" id="loan-amount" name="loan-amount" min="1000" max="20000" step="1000" value="9000" />
+          </div>
+          <div class="range-group">
+            <div class="range-label-row">
+              <label for="loan-duration">Laina-aika</label>
+              <div class="input-with-suffix">
+                <input type="number" id="loan-duration-input" min="1" max="20" step="1" value="12" />
+                <span class="unit">v.</span>
+              </div>
+            </div>
+            <input type="range" id="loan-duration" name="loan-duration" min="1" max="20" step="1" value="12" />
+          </div>
+          <p id="monthly-payment-label">Kuukausieräsi: <strong id="monthly-payment">787,5 €</strong></p>
+          <small id="interest-info">
+            Lainan korko 5 %.Todellinen korko lasketaan vuositasolla ehtojemme mukaan. Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </small>
+          <label for="name">Nimi*</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Sähköposti*</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Puhelinnumero*</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="co-applicant">Mahdollinen kanssahakija</label>
+          <input type="text" id="co-applicant" name="co-applicant" />
+          <label class="consent">
+            <input type="checkbox" id="terms" name="terms" required />
+            <small>Hyväksyn käyttöehdot. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</small>  
+          </label>
+          <button type="submit">Hae lainaa</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="hero">
+      <img src="Public/Hero.png" alt="Hero image with woman blowing flower" class="hero-image" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Mitä toivotkaan <br> - Me autamme</h1>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main>
+      <section class="about">
+        <h2>Meistä</h2>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+        </p>
+      </section>
+      
+      <div class="info-grid">
+      <section class="responsibility">
+        <h2>Vastuullisuus</h2>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....."
+        </p>
+      </section>
+    
+  
+    <!-- Countdown -->
+    <section class="countdown-section">
+      <h2>Lainatarjous päättyy</h2>
+      <div class="timebox" id="timebox">
+        <div class="time">
+          <h2 id="days">00</h2>
+          <h4>Days</h4>
+        </div>
+        <div class="time">
+          <h2 id="hours">00</h2>
+          <h4>Hours</h4>
+        </div> 
+        <div class="time">
+          <h2 id="minutes">00</h2>
+          <h4>Minutes</h4>
+        </div>
+        <div class="time">
+          <h2 id="seconds">00</h2>
+          <h4>Seconds</h4>
+        </div>     
+      </div>
+    </section>
+    </div>
+  </main>
+  
+    <!-- Footer -->
+    <footer>
+   <div class="footer-menu">
+        <a href="#">Laina</a>
+        <a href="#">Meistä</a>
+        <a href="#">Vastuullisuus</a>
+      </div>
+     
+      <div class="footer-info">
+        <p>Loan Company Oy</p>
+        <p>Y-tunnus: 938592-0</p>
+        <p>Lainaraitti 1, 10200 Laina</p>
+        <p>0456749590 • laina@laina.fi</p>
+      </div>
+  
+      <div class="footer-social">
+        <img src="Public/facebook.png" alt="Facebook" />
+        <img src="Public/instagram.png" alt="Instagram" />
+        <img src="Public/linkedin.png" alt="LinkedIn" />
+      </div>
+    </footer>
+  
+    <!-- JavaScript -->
+    <script src="js/form.js"></script>
+    <script src="js/countdowntimer.js"></script>
+    <script src="js/slider.js" defer></script>
+</body>
+</html>
